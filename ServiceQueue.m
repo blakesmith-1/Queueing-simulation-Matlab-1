@@ -338,7 +338,9 @@ end
 % When you assign an instance to a variable, an independent copy is made.
 % This is MATLAB's usual array behavior:
 %
-%  u = [1,2,3] v = u v(1) = 10
+%  u = [1,2,3];
+%  v = u;
+%  v(1) = 10;
 %
 % After the above, u is still [1,2,3] and v is [10,2,3] because the
 % assignment v = u copies the array.  The change to v(1) doesn't affect the
